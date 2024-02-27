@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Container Example</title>
+
+    <!-- Custom Container CSS -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggler" id="burger-icon">
+                    <img src="./assets/images/burger-bar.png" width="100%" alt="">
+                </div>
+                <ul class="nav-list list-unstyled">
+                    <li class="list-item">
+                        <a href="index.html" class="nav-link">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Home</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="about.html" class="nav-link">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">About Us</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="contact.html" class="nav-link">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Catalogues </font>
+                            </font>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- details section  -->
+    <section class="details-section">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="column">
+                    <div class="">
+                        <h1 class="title">
+                            Shipping Costs from Estonia to the Netherlands:
+                        </h1>
+                        <div class="description">
+                            <ul>
+                                <li>
+                                    <strong>
+                                        From Estonia to the Netherlands (Aangetekend pakket):
+                                    </strong>
+                                    You would need to
+                                    contact a shipping carrier or postal service to get an accurate quote for
+                                    sending a package from Estonia to the Netherlands with insurance € 50 euro’s.
+                                </li>
+                                <li>
+                                    <strong>
+                                        Within the Netherlands (Aangetekend pakket):
+                                    </strong>
+                                    ): Similarly, you would need to inquire with a local shipping carrier or postal
+                                    service for the cost of sending a registered mail package within the Netherlands. €
+                                    25 euro’s
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="address">
+                            <p><strong>
+                                    Return Address:
+                                </strong>
+                                Harju maakond, Tallinn, Lasnamäe linnaosa, Väike-Paala tn 2, 11415</p>
+                        </div>
+                        <div class="address">
+                            <p><strong>
+                                    Shipping Address:
+                                </strong>
+                                VanTrap OÜ P/a Singelstraat 9693CR Bad Nieuweschans Netherlands</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/perspective.webp" style="width: 100%;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- instruction section  -->
+    <section class="instruction">
+        <div class="container">
+            <p>
+                <strong>Return Instructions for Sending a Telephone:</strong>
+                When sending a telephone for return, it's important to
+                ensure its safety and security during transit. Here are some general instructions:
+            </p>
+            <div class="description">
+                <ul>
+                    <li>
+                        <strong>
+                            Packaging:
+                        </strong>
+                        Use proper packaging materials to protect the telephone during transit. Bubble wrap, packing
+                        peanuts, or foam inserts can help cushion the device.
+                    </li>
+                    <li>
+                        <strong>
+                            Box:
+                        </strong>
+                        Place the telephone in a sturdy box that provides enough space for additional packaging
+                        materials.
+                    </li>
+                    <li>
+                        <strong>
+                            Documentation:
+                        </strong>
+                        Include any necessary documentation such as invoices, receipts, or return authorization forms
+                        inside the package.
+                    </li>
+                    <li>
+                        <strong>
+                            Sealing:
+                        </strong>
+                        Seal the package securely using strong packing tape to prevent it from opening during transit.
+                    </li>
+                    <li>
+                        <strong>
+                            Labeling:
+                        </strong>
+                        Clearly label the package with the return address and shipping address. You may also include any
+                        tracking numbers or special instructions for the carrier
+                    </li>
+                    <li>
+                        <strong>
+                            Shipping Method
+                        </strong>
+                        Choose a reliable shipping method with tracking and insurance to ensure the safe delivery of the
+                        telephone.
+                    </li>
+                    <li>
+                        <strong>
+                            Carrier Selection
+                        </strong>
+                        Select a reputable shipping carrier or postal service that offers return shipping services.
+                    </li>
+                </ul>
+            </div>
+            <div class="instruction" style="padding: 20px 0px">
+                <p>
+                    <strong> Shipping Instructions: </strong> For detailed shipping instructions, including specific
+                    carrier options,
+                    pricing, and any special requirements, it's recommended to contact your preferred shipping carrier
+                    or postal service directly. They will be able to provide you with the most up-to-date information
+                    and assistance tailored to your specific needs.
+                </p>
+            </div>
+            <div class="email">
+                When you have questions about returning your item e-mail <a href="mailto:return@support-telefoon">
+                    return@support-telefoon </a>,nl
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to elements
+            var burgerIcon = document.getElementById('burger-icon');
+            var navList = document.querySelector('.nav-list');
+
+            // Add click event listener to burger icon
+            burgerIcon.addEventListener('click', function () {
+                // Toggle the 'open' class on the nav-list
+                navList.classList.toggle('open');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
