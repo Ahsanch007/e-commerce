@@ -193,7 +193,7 @@ ul.list-unstyled {
     -7px -5px 10px rgba(255, 255, 255, 0.5);
   padding: 20px;
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-bottom: 10px;
   cursor: pointer;
   gap: 10px;
@@ -206,6 +206,9 @@ ul.list-unstyled {
 
 .text-center {
   text-align: center;
+}
+.icon{
+  margin-top: 22px;
 }
 
 
