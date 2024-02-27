@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Container Example</title>
+
+    <!-- Custom Container CSS -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggler" id="burger-icon">
+                    <img src="./assets/images/burger-bar.png" width="100%" alt="">
+                </div>
+                <ul class="nav-list list-unstyled">
+                    <li class="list-item">
+                        <a href="index.html" class="nav-link ">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Home</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="about-us.html" class="nav-link">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">About Us</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="catalogues.html" class="nav-link active">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Catalogues </font>
+                            </font>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- details section  -->
+    <section class="details-section">
+        <div class="container">
+
+            <div class="catalogues">
+                <h1>
+                    Catalogues
+                </h1>
+            </div>
+            <div class="filter">
+                <!-- price range filter here -->
+                <div class="filter">
+                    <!-- price range filter here -->
+                    <label for="priceRange">Price Range:</label>
+                    <input type="range" id="priceRange" min="0" max="1000" step="10" value="1000"
+                        oninput="filterByPrice()">
+                    <span id="priceDisplay">1000€</span>
+                </div>
+            </div>
+
+            <div class="row" id="iphoneModels">
+                <div class="column">
+                    <div class="">
+                        <img src="./assets/images/13506824-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 7
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 150 €</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/images-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 7+
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 200 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/13506824-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 8
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 250 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/8-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 8+
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 300 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="iphoneModels">
+                <div class="column">
+                    <div class="">
+                        <img src="./assets/images/xr-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone XR
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 350 €</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/x-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone X
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 400 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/11-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 11
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 450 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/11pro-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 11 Pro
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 500 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="iphoneModels">
+                <div class="column">
+                    <div class="">
+                        <img src="./assets/images/12-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 12
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 550 €</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/12pro-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 12 Pro
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 600 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/13-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 13
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 650 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/13pro-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 13 Pro
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 700 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="iphoneModels">
+                <div class="column">
+                    <div class="">
+                        <img src="./assets/images/14-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 14
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 750 €</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/14pro-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 14 Pro
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 800 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/15-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 15
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 850 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="./assets/images/15pro-removebg-preview.png" style="width: 100%;" alt="">
+                        <div class="price">
+                            <h1 style="margin-bottom: 0px;">
+                                Iphone 15 Pro
+                            </h1>
+                            <p style="margin: 0px;">
+                                <strong> 900 €</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        function filterByPrice() {
+            var maxPrice = document.getElementById("priceRange").value;
+            document.getElementById("priceDisplay").innerText = maxPrice + "€";
+
+            var items = document.querySelectorAll('#iphoneModels .column');
+            items.forEach(function (item) {
+                var itemPrice = parseInt(item.querySelector('.price strong').innerText);
+                if (itemPrice > maxPrice) {
+                    item.style.display = 'none';
+                } else {
+                    item.style.display = 'block';
+                }
+            });
+
+            // Adjust card height when only one card is visible
+            var visibleItems = document.querySelectorAll('#iphoneModels .column[style="display: block;"]');
+            if (visibleItems.length === 1) {
+                visibleItems[0].style.height = '200px'; // Adjust the height as needed
+            } else {
+                // Reset the height when more than one card is visible
+                items.forEach(function (item) {
+                    item.style.height = ''; // Reset to default height
+                });
+            }
+        }
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to elements
+            var burgerIcon = document.getElementById('burger-icon');
+            var navList = document.querySelector('.nav-list');
+
+            // Add click event listener to burger icon
+            burgerIcon.addEventListener('click', function () {
+                // Toggle the 'open' class on the nav-list
+                navList.classList.toggle('open');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

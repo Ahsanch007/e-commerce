@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Container Example</title>
+
+    <!-- Custom Container CSS -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggler" id="burger-icon">
+                    <img src="./assets/images/burger-bar.png" width="100%" alt="">
+                </div>
+                <ul class="nav-list list-unstyled">
+                    <li class="list-item">
+                        <a href="index.html" class="nav-link ">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Home</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="about-us.html" class="nav-link active">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">About Us</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="catalogues.html" class="nav-link">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Catalogues </font>
+                            </font>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- details section  -->
+    <section class="loaction-section">
+        <div style="width: 100%"><iframe width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125794.619014228!2d22.293354809428383!3d58.64646540620853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692949c82a04bfd%3A0x40ea9fba4fb425c3!2sEstonia!5e0!3m2!1sen!2s!4v1709020896589!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to elements
+            var burgerIcon = document.getElementById('burger-icon');
+            var navList = document.querySelector('.nav-list');
+
+            // Add click event listener to burger icon
+            burgerIcon.addEventListener('click', function () {
+                // Toggle the 'open' class on the nav-list
+                navList.classList.toggle('open');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
