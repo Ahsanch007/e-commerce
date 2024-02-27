@@ -56,19 +56,30 @@
                     Catalogues
                 </h1>
             </div>
-            <div class="filter">
-                <!-- price range filter here -->
-                <div class="filter">
-                    <!-- price range filter here -->
-                    <label for="priceRange">Price Range:</label>
-                    <input type="range" id="priceRange" min="0" max="1000" step="10" value="1000"
-                        oninput="filterByPrice()">
-                    <span id="priceDisplay">1000€</span>
-                </div>
+            <div class="wrapper">
+                <fieldset class="filter-price">
+
+                    <div class="price-field">
+                        <input type="range" min="100" max="500" value="100" id="lower">
+                        <input type="range" min="100" max="2000" value="2000" id="upper">
+                    </div>
+                    <div class="price-wrap">
+                        <span class="price-title">FILTER</span>
+                        <div class="price-wrap-1">
+                            <input id="one">
+                            <label for="one">€</label>
+                        </div>
+                        <div class="price-wrap_line">-</div>
+                        <div class="price-wrap-2">
+                            <input id="two">
+                            <label for="two">€</label>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
 
             <div class="row" id="iphoneModels">
-                <div class="column">
+                <div class="column iphone-img">
                     <div class="">
                         <img src="./assets/images/13506824-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -82,7 +93,7 @@
 
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/images-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -95,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/13506824-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -108,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/8-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -123,7 +134,7 @@
                 </div>
             </div>
             <div class="row" id="iphoneModels">
-                <div class="column">
+                <div class="column iphone-img">
                     <div class="">
                         <img src="./assets/images/xr-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -137,7 +148,7 @@
 
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/x-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -150,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/11-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -163,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/11pro-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -178,7 +189,7 @@
                 </div>
             </div>
             <div class="row" id="iphoneModels">
-                <div class="column">
+                <div class="column iphone-img">
                     <div class="">
                         <img src="./assets/images/12-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -192,7 +203,7 @@
 
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/12pro-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -205,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/13-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -218,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/13pro-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -233,7 +244,7 @@
                 </div>
             </div>
             <div class="row" id="iphoneModels">
-                <div class="column">
+                <div class="column iphone-img">
                     <div class="">
                         <img src="./assets/images/14-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -247,7 +258,7 @@
 
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/14pro-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -260,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/15-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -273,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column iphone-img">
                     <div>
                         <img src="./assets/images/15pro-removebg-preview.png" style="width: 100%;" alt="">
                         <div class="price">
@@ -287,40 +298,81 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
+
+    <div class="container">
+        <div class="features-item text-center" style="margin: 30px 0px; display: flex;justify-content: center;">
+            <h1>
+                Reparation time 5 working days. <br>
+                Payment metode cash/ card on delivery.
+
+            </h1>
+        </div>
+    </div>
 
 
 
 
 
     <script>
-        function filterByPrice() {
-            var maxPrice = document.getElementById("priceRange").value;
-            document.getElementById("priceDisplay").innerText = maxPrice + "€";
+        var lowerSlider = document.querySelector('#lower');
+        var upperSlider = document.querySelector('#upper');
 
-            var items = document.querySelectorAll('#iphoneModels .column');
-            items.forEach(function (item) {
-                var itemPrice = parseInt(item.querySelector('.price strong').innerText);
-                if (itemPrice > maxPrice) {
-                    item.style.display = 'none';
+        document.querySelector('#two').value = upperSlider.value;
+        document.querySelector('#one').value = lowerSlider.value;
+
+        var lowerVal = parseInt(lowerSlider.value);
+        var upperVal = parseInt(upperSlider.value);
+
+        function updateColumns() {
+            // Add logic to filter and display columns based on the price range
+            var columns = document.querySelectorAll('.iphone-img');
+            var minPrice = parseInt(lowerSlider.value);
+            var maxPrice = parseInt(upperSlider.value);
+
+            columns.forEach(function (column) {
+                var price = parseInt(column.querySelector('.price strong').innerText);
+                if (price >= minPrice && price <= maxPrice) {
+                    column.style.display = 'block';
                 } else {
-                    item.style.display = 'block';
+                    column.style.display = 'none';
                 }
             });
-
-            // Adjust card height when only one card is visible
-            var visibleItems = document.querySelectorAll('#iphoneModels .column[style="display: block;"]');
-            if (visibleItems.length === 1) {
-                visibleItems[0].style.height = '200px'; // Adjust the height as needed
-            } else {
-                // Reset the height when more than one card is visible
-                items.forEach(function (item) {
-                    item.style.height = ''; // Reset to default height
-                });
-            }
         }
+
+        upperSlider.oninput = function () {
+            lowerVal = parseInt(lowerSlider.value);
+            upperVal = parseInt(upperSlider.value);
+
+            if (upperVal < lowerVal + 4) {
+                lowerSlider.value = upperVal - 4;
+                if (lowerVal == lowerSlider.min) {
+                    upperSlider.value = 4;
+                }
+            }
+            document.querySelector('#two').value = this.value;
+            updateColumns();
+        };
+
+        lowerSlider.oninput = function () {
+            lowerVal = parseInt(lowerSlider.value);
+            upperVal = parseInt(upperSlider.value);
+            if (lowerVal > upperVal - 4) {
+                upperSlider.value = lowerVal + 4;
+                if (upperVal == upperSlider.max) {
+                    lowerSlider.value = parseInt(upperSlider.max) - 4;
+                }
+            }
+            document.querySelector('#one').value = this.value;
+            updateColumns();
+        };
+
+        // Initial call to update columns based on the default price range
+        updateColumns();
     </script>
+
 
 
     <script>
